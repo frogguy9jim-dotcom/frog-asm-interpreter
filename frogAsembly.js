@@ -348,13 +348,12 @@ async function interpret(rawcode) {
 }
 
 function askInput(register, registers, cAST, i, msg) {
-    // Return a promise to make await work
     return new Promise((resolve) => {
         rl.question(msg, (input) => {
-            registers[cAST.data[i].register] = Number(input);
-            resolve(); // Notifies the loop to continue
-        });
-    });
+            registers[cAST.data[i].register] = Number(input)
+            resolve()
+        })
+    })
 }
 
 function commandLine(fileContent, cAST, tokenCode, filePath) {
