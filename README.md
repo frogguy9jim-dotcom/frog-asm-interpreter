@@ -8,6 +8,7 @@ also keep in mind this project is pretty old so forgive me for some questionable
 ## how to setup (windows)
 once you've downloaded the repo, create a file ending in .frga \
 while selecting it press alt+enter and change the default app to "runcode.bat", once you've done that you simply need to double click the file to run it
+(make sure you have node.js installed!)
 
 
 
